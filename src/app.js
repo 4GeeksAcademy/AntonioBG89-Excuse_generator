@@ -9,7 +9,6 @@ window.onload = function() {
   //write your code here
 
   let textExcuse = document.getElementById("excuse");
-  innerHtml = resultado;
 
   let who = ["The dog", "My grandma", "The mailman", "My bird"];
   let action = ["ate", "peed", "crushed", "broke"];
@@ -36,4 +35,6 @@ window.onload = function() {
 
   let resultado = generateExcuse();
   console.log(resultado);
+
+  textExcuse.innerHTML = resultado;
 };
